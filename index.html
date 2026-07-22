@@ -1,169 +1,336 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Phoo Pyae Sone ❤️</title>
 
 <style>
+
 *{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:'Segoe UI',sans-serif;
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Segoe UI',sans-serif;
 }
+
 
 body{
-    height:100vh;
-    overflow:hidden;
-    background:
-    radial-gradient(circle at top,#4b1d68,#090014 60%);
-    color:white;
+
+height:100vh;
+overflow:hidden;
+
+background:
+radial-gradient(circle at top,#5b247a,#090014 70%);
+
+color:white;
+
 }
+
 
 /* Stars */
+
 .star{
-    position:absolute;
-    width:3px;
-    height:3px;
-    background:white;
-    border-radius:50%;
-    animation:blink 2s infinite;
+
+position:absolute;
+
+width:3px;
+height:3px;
+
+background:white;
+
+border-radius:50%;
+
+animation:blink 2s infinite;
+
 }
+
 
 @keyframes blink{
-    50%{opacity:.2;}
+
+50%{
+opacity:.2;
+}
+
 }
 
 
-/* Main */
+/* Container */
+
 .container{
-    height:100vh;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    text-align:center;
-    position:relative;
+
+height:100vh;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+text-align:center;
+
 }
 
+
+/* Card */
 
 .card{
-    width:90%;
-    max-width:450px;
-    padding:30px;
-    border-radius:30px;
 
-    background:rgba(255,255,255,.08);
-    backdrop-filter:blur(15px);
+width:90%;
 
-    box-shadow:
-    0 0 40px #ff4da6;
+max-width:430px;
 
-    animation:show 2s;
+padding:30px;
+
+border-radius:30px;
+
+
+background:
+rgba(255,255,255,.08);
+
+
+backdrop-filter:blur(15px);
+
+
+box-shadow:
+
+0 0 40px #ff4da6;
+
+
+animation:show 1.5s;
+
 }
+
 
 
 @keyframes show{
-    from{
-        opacity:0;
-        transform:translateY(50px);
-    }
-    to{
-        opacity:1;
-    }
+
+from{
+
+opacity:0;
+
+transform:translateY(50px);
+
+}
+
+to{
+
+opacity:1;
+
+}
+
 }
 
 
-/* Cartoon Couple */
+/* Couple Photo */
 
-.couple{
-    font-size:90px;
-    animation:float 3s infinite;
+.couple-box{
+
+position:relative;
+
+margin-bottom:20px;
+
 }
+
+
+.couple-img{
+
+width:220px;
+
+height:220px;
+
+object-fit:cover;
+
+border-radius:50%;
+
+
+border:5px solid #ff8bd8;
+
+
+box-shadow:
+
+0 0 30px pink;
+
+
+animation:float 3s infinite;
+
+}
+
+
 
 @keyframes float{
-    50%{
-        transform:translateY(-15px);
-    }
+
+50%{
+
+transform:translateY(-15px);
+
 }
 
+}
+
+
+
+.heart-circle{
+
+position:absolute;
+
+right:70px;
+
+bottom:0;
+
+font-size:35px;
+
+}
+
+
+
+/* Title */
 
 h1{
-    font-size:42px;
-    color:#ff8bd8;
 
-    text-shadow:
-    0 0 10px pink,
-    0 0 30px hotpink;
+font-size:38px;
+
+color:#ff8bd8;
+
+
+text-shadow:
+
+0 0 10px pink,
+
+0 0 30px hotpink;
 
 }
 
-
-.date{
-    margin:15px;
-    font-size:22px;
-    color:#ffd6f5;
-}
 
 
 .story{
-    line-height:1.8;
-    margin-top:20px;
+
+margin-top:20px;
+
+line-height:1.8;
+
 }
 
+
+
+/* Counter */
+
+.love-counter{
+
+margin-top:20px;
+
+}
+
+
+.counter-box{
+
+display:flex;
+
+justify-content:center;
+
+gap:10px;
+
+margin-top:15px;
+
+}
+
+
+.counter-box div{
+
+background:#ffffff15;
+
+padding:10px;
+
+border-radius:15px;
+
+}
+
+
+.counter-box span{
+
+font-size:22px;
+
+color:#ff8bd8;
+
+}
+
+
+
+.forever{
+
+margin-top:15px;
+
+color:#ffd6f5;
+
+}
+
+
+
+/* Buttons */
 
 button{
 
-    margin-top:25px;
+margin-top:20px;
 
-    padding:14px 35px;
+padding:13px 25px;
 
-    border:none;
-    border-radius:50px;
+border:none;
 
-    background:#ff4da6;
+border-radius:50px;
 
-    color:white;
+background:#ff4da6;
 
-    font-size:18px;
+color:white;
 
-    cursor:pointer;
+font-size:16px;
 
-    box-shadow:0 0 25px pink;
+cursor:pointer;
+
+box-shadow:0 0 25px pink;
 
 }
+
 
 
 /* Hearts */
 
 .heart{
 
-    position:absolute;
+position:absolute;
 
-    bottom:-20px;
+bottom:-20px;
 
-    animation:heart 8s linear infinite;
+animation:heart 8s linear infinite;
 
 }
+
 
 
 @keyframes heart{
 
-    from{
-        transform:translateY(0);
-        opacity:1;
-    }
+from{
 
-    to{
-        transform:translateY(-110vh);
-        opacity:0;
-    }
+transform:translateY(0);
+
+opacity:1;
+
+}
+
+to{
+
+transform:translateY(-110vh);
+
+opacity:0;
+
+}
 
 }
 
 
-/* Love Letter */
+
+/* Letter */
 
 #letter{
 
@@ -172,31 +339,39 @@ display:none;
 position:fixed;
 
 top:50%;
+
 left:50%;
 
 transform:translate(-50%,-50%);
 
+
 width:85%;
+
 max-width:400px;
 
 padding:30px;
+
 
 background:#1b0028;
 
 border-radius:25px;
 
+
 box-shadow:0 0 40px pink;
 
-z-index:10;
+z-index:20;
 
 }
 
 
 #letter h2{
+
 color:#ff8bd8;
+
 }
 
 </style>
+
 
 </head>
 
@@ -210,29 +385,25 @@ color:#ff8bd8;
 <div class="card">
 
 
-<body>
+<div class="couple-box">
 
-<div id="cinematicIntro">
 
-    <div class="introText">
+<img src="couple.png" class="couple-img">
 
-        <h1>
-        Our Love Story Begins ❤️
-        </h1>
 
-        <p>
-        Phoo Pyae Sone & My Love
-        </p>
+<div class="heart-circle">
+❤️
+</div>
 
-    </div>
 
 </div>
 
 
-<div class="container">
+
 <h1>
 Phoo Pyae Sone
 </h1>
+
 
 
 <div class="love-counter">
@@ -245,54 +416,31 @@ Phoo Pyae Sone
 <div class="counter-box">
 
 <div>
-<span id="days">
-0
-</span>
-
-<p>
-Days
-</p>
-
+<span id="days">0</span>
+<p>Days</p>
 </div>
 
 
 <div>
-<span id="hours">
-0
-</span>
-
-<p>
-Hours
-</p>
-
+<span id="hours">0</span>
+<p>Hours</p>
 </div>
 
 
 <div>
-<span id="minutes">
-0
-</span>
-
-<p>
-Minutes
-</p>
-
+<span id="minutes">0</span>
+<p>Minutes</p>
 </div>
 
 
 <div>
-<span id="seconds">
-0
-</span>
-
-<p>
-Seconds
-</p>
-
+<span id="seconds">0</span>
+<p>Seconds</p>
 </div>
 
 
 </div>
+
 
 <p class="forever">
 Forever Together ❤️
@@ -300,30 +448,44 @@ Forever Together ❤️
 
 
 </div>
+
+
+
 <div class="story">
 
-A beautiful love story<br>
-
-Two hearts, one journey ✨
+A beautiful love story ✨
 
 <br><br>
 
-Every moment with you<br>
+Two hearts, one journey ❤️
+
+<br><br>
+
+Every moment with you
 is my favorite memory.
 
 </div>
 
 
+
 <button onclick="openLove()">
 Open My Love 💌
 </button>
-<button id="musicBtn" onclick="toggleMusic()">
+
+
+<button onclick="toggleMusic()" id="musicBtn">
 🎵 Music ON
 </button>
 
+
+
 <audio id="bgMusic" loop>
-    <source src="music.mp3" type="audio/mp3">
+
+<source src="music.mp3" type="audio/mp3">
+
 </audio>
+
+
 
 </div>
 
@@ -337,20 +499,17 @@ Open My Love 💌
 My Love ❤️
 </h2>
 
-<br>
 
 <p>
+
+<br>
+
 Dear Phoo Pyae Sone,
 
 <br><br>
 
 From 1.2.2023,
 our story started.
-
-Every smile,
-every moment,
-and every memory
-is special.
 
 <br><br>
 
@@ -362,6 +521,7 @@ Forever Together ❤️
 <button onclick="closeLove()">
 Close
 </button>
+
 
 </div>
 
@@ -382,8 +542,6 @@ star.style.left=Math.random()*100+"%";
 
 star.style.top=Math.random()*100+"%";
 
-star.style.animationDelay=Math.random()*3+"s";
-
 document.body.appendChild(star);
 
 }
@@ -394,6 +552,7 @@ document.body.appendChild(star);
 
 setInterval(()=>{
 
+
 let h=document.createElement("div");
 
 h.className="heart";
@@ -402,11 +561,7 @@ h.innerHTML="❤️";
 
 h.style.left=Math.random()*100+"%";
 
-h.style.fontSize=
-(15+Math.random()*30)+"px";
-
-h.style.animationDuration=
-(5+Math.random()*5)+"s";
+h.style.fontSize=(15+Math.random()*30)+"px";
 
 
 document.body.appendChild(h);
@@ -423,37 +578,57 @@ h.remove();
 
 
 
+
 // Letter
 
 function openLove(){
 
-document.getElementById("letter")
-.style.display="block";
+document.getElementById("letter").style.display="block";
 
 }
 
 
 function closeLove(){
 
-document.getElementById("letter")
-.style.display="none";
+document.getElementById("letter").style.display="none";
 
 }
 
 
+
+// Music
+
+const music=document.getElementById("bgMusic");
+
+let playing=false;
+
+
+function toggleMusic(){
+
+if(!playing){
+
+music.play();
+
+document.getElementById("musicBtn").innerHTML="🔇 Music OFF";
+
+playing=true;
+
+}else{
+
+music.pause();
+
+document.getElementById("musicBtn").innerHTML="🎵 Music ON";
+
+playing=false;
+
+}
+
+}
+
+
+
 </script>
 
-<div id="cinematicIntro">
-
-    <div class="introText">
-        <h1>Our Love Story Begins ❤️</h1>
-        <p>Phoo Pyae Sone & My Love</p>
-    </div>
-
-</div>
-<audio id="bgMusic" loop>
-    <source src="music.mp3" type="audio/mp3">
-</audio>
 
 </body>
 </html>
