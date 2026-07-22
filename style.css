@@ -791,3 +791,105 @@ transform:scale(1.3);
 }
 
 }
+/* =====================
+   LOVE COUNTER
+===================== */
+
+
+.love-counter{
+
+margin-top:35px;
+
+padding:20px;
+
+background:
+
+rgba(255,255,255,.08);
+
+
+border-radius:25px;
+
+
+box-shadow:
+
+0 0 25px pink;
+
+}
+
+
+.love-counter h2{
+
+color:#ffb3e6;
+
+margin-bottom:20px;
+
+}
+
+
+
+.counter-box{
+
+
+display:flex;
+
+justify-content:center;
+
+gap:12px;
+
+flex-wrap:wrap;
+
+
+}
+
+
+
+.counter-box div{
+
+
+width:70px;
+
+padding:10px;
+
+
+background:
+
+rgba(0,0,0,.25);
+
+
+border-radius:15px;
+
+
+}
+
+
+
+.counter-box span{
+
+
+font-size:25px;
+
+color:#ff8bd8;
+
+font-weight:bold;
+
+
+}
+
+
+
+.counter-box p{
+
+font-size:13px;
+
+}
+
+
+.forever{
+
+margin-top:20px;
+
+color:#ffd6f5;
+
+font-size:18px;
+
+}
