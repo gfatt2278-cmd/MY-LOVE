@@ -461,3 +461,49 @@ function toggleMusic(){
     }
 
 }
+const bgMusic =
+document.getElementById("bgMusic");
+
+
+bgMusic.volume = 0;
+
+
+function startMusic(){
+
+bgMusic.play();
+
+
+let volume = 0;
+
+
+let fade =
+setInterval(()=>{
+
+if(volume < 1){
+
+volume +=0.05;
+
+bgMusic.volume = volume;
+
+}else{
+
+clearInterval(fade);
+
+}
+
+},300);
+
+}
+
+
+
+window.onload=function(){
+
+setTimeout(()=>{
+
+startMusic();
+
+},3000);
+
+
+};
