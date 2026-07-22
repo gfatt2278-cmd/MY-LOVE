@@ -274,3 +274,80 @@ load.style.display="none";
 
 
 };
+// =====================
+// LOVE COUNTER
+// START DATE 1.2.2023
+// =====================
+
+
+function updateLoveCounter(){
+
+
+let startDate = new Date("2023-02-01 00:00:00");
+
+
+let now = new Date();
+
+
+
+let difference =
+now - startDate;
+
+
+
+let seconds =
+Math.floor(difference / 1000);
+
+
+
+let days =
+Math.floor(seconds / 86400);
+
+
+
+let hours =
+Math.floor(
+(seconds % 86400) / 3600
+);
+
+
+
+let minutes =
+Math.floor(
+(seconds % 3600) / 60
+);
+
+
+
+let sec =
+seconds % 60;
+
+
+
+document.getElementById("days")
+.innerHTML=days;
+
+
+document.getElementById("hours")
+.innerHTML=hours;
+
+
+document.getElementById("minutes")
+.innerHTML=minutes;
+
+
+document.getElementById("seconds")
+.innerHTML=sec;
+
+
+
+}
+
+
+setInterval(
+updateLoveCounter,
+1000
+);
+
+
+updateLoveCounter();
