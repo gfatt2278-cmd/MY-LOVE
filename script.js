@@ -434,3 +434,30 @@ intro.style.display="none";
 
 
 }
+const music = document.getElementById("bgMusic");
+const musicBtn = document.getElementById("musicBtn");
+
+let playing = false;
+
+
+function toggleMusic(){
+
+    if(playing){
+
+        music.pause();
+
+        musicBtn.innerHTML="🎵 Music ON";
+
+        playing=false;
+
+    }else{
+
+        music.play();
+
+        musicBtn.innerHTML="🔇 Music OFF";
+
+        playing=true;
+
+    }
+
+}
