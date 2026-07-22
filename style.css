@@ -629,52 +629,6 @@ right:20px;
    V3 COUPLE IMAGE
 ================= */
 
-
-.couple-box{
-
-position:relative;
-
-display:flex;
-
-justify-content:center;
-
-margin-bottom:20px;
-
-}
-
-
-
-.couple-img{
-
-
-width:260px;
-
-height:260px;
-
-object-fit:cover;
-
-
-border-radius:50%;
-
-
-border:5px solid rgba(255,255,255,.5);
-
-
-box-shadow:
-
-0 0 30px pink,
-0 0 70px #ff4da6;
-
-
-animation:
-
-coupleFloat 4s infinite;
-
-
-}
-
-
-
 @keyframes coupleFloat{
 
 
