@@ -249,13 +249,43 @@ border:6px solid white;
 
 box-shadow:
 
-0 0 20px #ff8bd8,
-0 0 60px #ff4da6;
+0 0 30px #ff8bd8,
+0 0 80px #ff4da6;
 
 
 animation:
 
 float 3s infinite,
+glow 2s infinite;
+
+
+transition:.5s;
+
+z-index:2;
+
+}
+
+
+.couple-img:hover{
+
+transform:scale(1.12);
+
+}
+
+
+
+@keyframes glow{
+
+50%{
+
+box-shadow:
+
+0 0 50px white,
+0 0 100px hotpink;
+
+}
+
+}
 photoGlow 2s infinite;
 
 
