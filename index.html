@@ -130,7 +130,52 @@ opacity:1;
 
 position:relative;
 
-margin-bottom:20px;
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+margin-bottom:30px;
+
+}
+
+
+/* Rotating Love Ring */
+
+.couple-box::before{
+
+content:"";
+
+position:absolute;
+
+width:250px;
+
+height:250px;
+
+border-radius:50%;
+
+border:2px solid #ff8bd8;
+
+box-shadow:
+
+0 0 20px pink,
+0 0 60px hotpink;
+
+animation:ring 6s linear infinite;
+
+}
+
+
+@keyframes ring{
+
+from{
+transform:rotate(0deg);
+}
+
+to{
+transform:rotate(360deg);
+}
 
 }
 
