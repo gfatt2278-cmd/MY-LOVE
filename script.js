@@ -351,3 +351,86 @@ updateLoveCounter,
 
 
 updateLoveCounter();
+// =====================
+// CINEMATIC INTRO
+// =====================
+
+
+let text =
+"Every love story is beautiful... But ours is my favorite ❤️";
+
+
+let index=0;
+
+
+
+function typeWriter(){
+
+
+if(index < text.length){
+
+
+document.getElementById("typing")
+.innerHTML += text.charAt(index);
+
+
+index++;
+
+
+setTimeout(
+typeWriter,
+80
+);
+
+
+}
+
+
+}
+
+
+
+typeWriter();
+
+
+
+
+
+function startLove(){
+
+
+let intro=
+document.getElementById("intro");
+
+
+intro.classList.add("hideIntro");
+
+
+
+let music=
+document.getElementById("loveMusic");
+
+
+
+music.play()
+.catch(()=>{
+
+console.log(
+"User interaction required"
+);
+
+});
+
+
+
+setTimeout(()=>{
+
+
+intro.style.display="none";
+
+
+},1500);
+
+
+
+}
