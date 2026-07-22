@@ -763,3 +763,77 @@ filter:blur(20px);
 
 
 }
+.couple-box{
+
+position:relative;
+
+display:flex;
+
+justify-content:center;
+
+margin-bottom:20px;
+
+}
+
+
+.couple-img{
+
+width:260px;
+
+height:260px;
+
+object-fit:cover;
+
+border-radius:50%;
+
+border:5px solid white;
+
+box-shadow:
+
+0 0 30px pink,
+0 0 70px #ff4da6;
+
+animation:
+
+floatCouple 4s infinite;
+
+}
+
+
+@keyframes floatCouple{
+
+50%{
+
+transform:translateY(-15px);
+
+}
+
+}
+
+
+.love-heart{
+
+position:absolute;
+
+right:70px;
+
+top:0;
+
+font-size:40px;
+
+animation:
+
+heartBeat 1.5s infinite;
+
+}
+
+
+@keyframes heartBeat{
+
+50%{
+
+transform:scale(1.3);
+
+}
+
+}
