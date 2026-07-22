@@ -1053,3 +1053,42 @@ visibility:hidden;
 
 
 }
+#musicBtn{
+
+position:fixed;
+
+bottom:25px;
+right:25px;
+
+padding:12px 25px;
+
+border-radius:50px;
+
+border:none;
+
+background:#ff4da6;
+
+color:white;
+
+font-size:16px;
+
+box-shadow:
+0 0 20px pink;
+
+cursor:pointer;
+
+z-index:20;
+
+transition:.3s;
+
+}
+
+
+#musicBtn:hover{
+
+transform:scale(1.1);
+
+box-shadow:
+0 0 35px hotpink;
+
+}
