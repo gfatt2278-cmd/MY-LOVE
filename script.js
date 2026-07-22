@@ -288,3 +288,57 @@ console.log(
 );
 
 };
+function startLove(){
+
+    let intro =
+    document.getElementById("intro");
+
+
+    intro.classList.add("hideIntro");
+
+
+    let music =
+    document.getElementById("loveMusic");
+
+
+    if(music){
+
+        music.volume = 0;
+
+        music.play();
+
+
+        let volume = 0;
+
+
+        let fade =
+        setInterval(()=>{
+
+
+            if(volume < 1){
+
+                volume += 0.05;
+
+                music.volume = volume;
+
+            }else{
+
+                clearInterval(fade);
+
+            }
+
+
+        },300);
+
+    }
+
+
+
+    setTimeout(()=>{
+
+        intro.style.display="none";
+
+    },1500);
+
+
+}
