@@ -1,1 +1,36 @@
+<!-- CINEMATIC INTRO -->
 
+<div id="intro">
+
+
+<div class="intro-content">
+
+
+<div class="intro-heart">
+❤️
+</div>
+
+
+<h1>
+Phoo Pyae Sone
+</h1>
+
+
+<p id="typing"></p>
+
+
+<button onclick="startLove()">
+
+Enter Our Story 💕
+
+</button>
+
+
+</div>
+<audio id="loveMusic" loop>
+
+<source src="music.mp3" type="audio/mpeg">
+
+</audio>
+
+</div>
