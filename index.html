@@ -135,7 +135,115 @@ margin-bottom:20px;
 }
 
 
+/* Premium Couple Photo */
+
+.couple-box{
+
+position:relative;
+display:flex;
+justify-content:center;
+align-items:center;
+
+margin-bottom:30px;
+
+}
+
+
+/* Heart Ring */
+
+.couple-box::before{
+
+content:"";
+
+position:absolute;
+
+width:250px;
+height:250px;
+
+border-radius:50%;
+
+border:2px solid #ff8bd8;
+
+box-shadow:
+
+0 0 20px pink,
+0 0 50px hotpink;
+
+animation:rotateRing 6s linear infinite;
+
+}
+
+
+@keyframes rotateRing{
+
+from{
+transform:rotate(0deg);
+}
+
+to{
+transform:rotate(360deg);
+}
+
+}
+
+
+
 .couple-img{
+
+width:220px;
+
+height:220px;
+
+object-fit:cover;
+
+border-radius:50%;
+
+
+border:6px solid white;
+
+
+box-shadow:
+
+0 0 20px #ff8bd8,
+0 0 60px #ff4da6;
+
+
+animation:
+
+float 3s infinite,
+photoGlow 2s infinite;
+
+
+transition:.5s;
+
+z-index:2;
+
+}
+
+
+
+.couple-img:hover{
+
+transform:scale(1.12);
+
+}
+
+
+
+@keyframes photoGlow{
+
+
+50%{
+
+box-shadow:
+
+0 0 40px white,
+0 0 80px hotpink;
+
+}
+
+
+}
 
 width:220px;
 
