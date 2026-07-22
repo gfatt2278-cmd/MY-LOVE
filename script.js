@@ -542,3 +542,46 @@ setTimeout(()=>{
     startMusic();
 
 },3000);
+const music =
+document.getElementById("bgMusic");
+
+
+music.volume=0;
+
+
+function cinematicMusic(){
+
+music.play();
+
+
+let v=0;
+
+
+let fade=setInterval(()=>{
+
+
+v+=0.05;
+
+
+music.volume=v;
+
+
+if(v>=1){
+
+clearInterval(fade);
+
+}
+
+
+},400);
+
+
+}
+
+
+// Intro နဲ့ကိုက်အောင်
+setTimeout(()=>{
+
+cinematicMusic();
+
+},3000);
